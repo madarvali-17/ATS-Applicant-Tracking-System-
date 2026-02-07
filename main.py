@@ -9,7 +9,7 @@ import PyPDF2
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-client = genai.Client(api_key="AIzaSyA8M55Ek_3ly211-IKYIvUwy9StERqBTb0")
+client = genai.Client(api_key="AIzaSyC87D-7PPcAr8DUxxAiHJH3phUYINBD6rE")
 
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
@@ -141,6 +141,4 @@ def analyze():
 # RUN
 # ==============================
 if __name__ == "__main__":
-
     app.run(debug=True, port=5002)
-
